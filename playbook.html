@@ -283,40 +283,7 @@ Reduces Cost: Ahorra dinero en una transacción.
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <script type="text/javascript">
-function passWord() {
-var count = 1;
-var pass1 = prompt('Please Enter Your Password',' ');
-//change to your password
-var password = "adminbrujuteam2020"
-//max attempts
-var maxattempt = 4
-
-while (count < 4) {
-if (!pass1)
-history.go(-1);
-if (pass1.toLowerCase() == password) {
-alert('You Got it Right!');
-window.open('playbook.html');
-break;
-}
-count+=1;
-var pass1 =
-prompt('Access Denied - Password Incorrect, Please Try Again.','Give Me The Password');
-}
-
-if(count == maxattempt)
-{
-alert("Attempted 4 times")
-}
-
-}
-</SCRIPT>
-<CENTER>
-<FORM>
-<input type="button" value="Enter Protected Area"  onClick="passWord()">
-</FORM>
-</CENTER></strong>
+  
 
 </body>
 
