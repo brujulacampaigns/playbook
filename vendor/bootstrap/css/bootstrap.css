@@ -586,6 +586,12 @@ pre code {
   margin-left: auto;
 }
 
+.tarjetaresponsive{
+  width: 80%;
+  height: auto;
+  padding: .5rem;
+}
+
 @media (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px;
