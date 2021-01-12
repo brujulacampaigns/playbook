@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="css/playbook.css">
 
   <title>CAFÉ BRÚJULA | PLAYBOOK</title>
 
@@ -29,7 +29,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Contacto
+            <a class="nav-link" href="mailto:info@cafebrujula.com">Contacto
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -48,6 +48,9 @@
       <div class="col-lg-12 text-center">
         <p class="maintitle" style="font-size: 2rem; margin-top: 2rem; margin-bottom:0;">PLAYBOOK</p>
         <br>
+
+        <button type="button" class="collapsible">Abrir Playbook</button>
+        <div class="content">
 
 
       <ul class="customlist" style="text-align:center; margin-left:-2.5rem;" >
@@ -275,15 +278,85 @@ Integrates: Integra diferentes aspectos de la vida o de un proceso.
 Reduces Cost: Ahorra dinero en una transacción.
 </p>
 
+
+
       </div>
     </div>
   </div>
+  <button type="button" class="collapsible">Abrir Fichas Técnicas</button>
+  <div class="content">
+
+   <ul class="flexbox">
+     <li class="box1"> <img class="ficha1" src="assets/img/fichas/1.png" alt=""> </li>
+     <li class="box2"> <img class="ficha2"src="assets/img/fichas/2.png" alt=""> </li>
+   </ul>
+
+   <ul class="flexbox">
+     <li class="box1"> <img class="ficha1" src="assets/img/fichas/3.png" alt=""> </li>
+     <li class="box2"> <img class="ficha2" src="assets/img/fichas/4.png" alt=""> </li>
+   </ul>
+
+   <ul class="flexbox">
+     <li class="box1"> <img class="ficha1" src="assets/img/fichas/5.png" alt=""> </li>
+     <li class="box2"> <img class="ficha2" src="assets/img/fichas/6.png" alt=""> </li>
+   </ul>
+
+   <ul class="flexbox">
+     <li class="box1"> <img class="ficha1" src="assets/img/fichas/7.png" alt=""> </li>
+     <li class="box2"> <img class="ficha2" src="assets/img/fichas/8.png" alt=""> </li>
+   </ul>
+
+   <ul class="flexbox">
+     <li class="box1"> <img class="ficha1" src="assets/img/fichas/9.png" alt=""> </li>
+     <li class="box2"> <img class="ficha2" src="assets/img/fichas/10.png" alt=""> </li>
+   </ul>
+
+   <ul class="flexbox">
+     <li class="box1"> <img class="ficha1" src="assets/img/fichas/11.png" alt=""> </li>
+     <li class="box2"> <img class="ficha2" src="assets/img/fichas/12.png" alt=""> </li>
+   </ul>
+
+   <ul class="flexbox">
+     <li class="box1"> <img class="ficha1" src="assets/img/fichas/13.png" alt=""> </li>
+     <li class="box2"> <img class="ficha2" src="assets/img/fichas/14.png" alt=""> </li>
+   </ul>
+
+   <ul class="flexbox">
+     <li class="box1"> <img class="ficha1" src="assets/img/fichas/15.png" alt=""> </li>
+     <li class="box2"> <img class="ficha2" src="assets/img/fichas/16.png" alt=""> </li>
+   </ul>
+
+   <ul class="flexbox">
+     <li class="box1"> <img class="ficha1" src="assets/img/fichas/17.png" alt=""> </li>
+     <li class="box2"> <img class="ficha2" src="assets/img/fichas/18.png" alt=""> </li>
+   </ul>
+
+</div>
+
+
+</div>
 
   <!-- Bootstrap core JavaScript -->
+  <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  
+
 
 </body>
 
